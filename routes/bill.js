@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  var Bill = require("../controller/Bill");
+  var Bill = require("../controller/bill");
   var router = require("express").Router();
 
   router.post("/", Bill.create);
