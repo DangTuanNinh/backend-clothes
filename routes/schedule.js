@@ -1,5 +1,5 @@
 module.exports = (app) => {
-  var Schedule = require("../controller/Schedule");
+  var Schedule = require("../controller/schedule");
   var router = require("express").Router();
 
   router.post("/", Schedule.create);
