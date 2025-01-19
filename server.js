@@ -10,8 +10,8 @@ app.get("/", (req, res) => {
   res.send("<h1>Chào tất cả các bạn đến với api dịch vụ quần áo của tôi!</h1>");
 });
 require("./routes/Tag")(app);
-require("./routes/Schedule")(app);
-require("./routes/Bill")(app);
+require("./routes/schedule")(app);
+require("./routes/bill")(app);
 require("./routes/TagNew")(app);
 require("./routes/New")(app);
 require("./routes/User")(app);
