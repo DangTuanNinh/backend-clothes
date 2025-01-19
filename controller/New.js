@@ -2,7 +2,7 @@ var New = require("../models").New;
 var TagNew = require("../models").TagNew;
 var Tag = require("../models").Tag;
 var User = require("../models").User;
-const Op = require("Sequelize").Op;
+const { Op } = require("sequelize");
 require("dotenv").config();
 let PAGE_SIZE = parseInt(process.env.PAGE_SIZE);
 exports.create = (req, res) => {
